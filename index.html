@@ -7,11 +7,19 @@
     <meta charset="utf-8">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+
+    </script>
   </head>
   <body>
+    <div id="target1" class="target">
+        <h3>A-Frame</h3>
+        <p>A-Frameは簡単にWeb VRが実現できるフレームワークです。</p>
+    </div>
     <a-scene embedded arjs="debugUIEnabled:false;">
       <a-marker preset="hiro">
-        <a-box position="0 -1 0" scale="1 1 1" color="gray"></a-box>
+        <a-plane width="16" height="10" material="shader:html;target: #target1;"></a-plane>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
