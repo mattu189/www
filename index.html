@@ -7,15 +7,13 @@
     <meta charset="utf-8">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
-    <!-- https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mattu189/www/blob/main/img/iruka -->
   </head>
   <body>
     <div class="arjs-loader">
       <div>Loading, please wait...</div>
     </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-      <a-nft type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mattu189/www/master/img/iruka' smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+      <a-nft type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mattu189/www/master/img/hummer' smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
         <a-box position="0 0.5 0" wireframe="true"></a-box>
       </a-nft>
       <a-entity camera></a-entity>
