@@ -12,15 +12,11 @@
     </script>
   </head>
   <body>
-    <a-scene embedded arjs="debugUIEnabled:false;">
-      <a-nft
-        type='nft'
-        url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mattu189/www/img/iruka'
-        smooth='true'
-        smoothCount='10'
-        smoothTolerance='0.01'
-        smoothThreshold='5'
-      >
+    <div class="arjs-loader">
+      <div>Loading, please wait...</div>
+    </div>
+    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+      <a-nft type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/mattu189/www/blob/main/img/iruka' smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
         <a-box position="0 0.5 0" wireframe="true"></a-box>
       </a-nft>
       <a-entity camera></a-entity>
